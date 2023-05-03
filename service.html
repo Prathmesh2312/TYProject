@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Housemaid Services</title>
+	<link rel="stylesheet" type="text/css" href="abot.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Housemaid Services</h1>
+		<nav>
+			<ul>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="services">
+			<h2>Our Services</h2>
+			<ul>
+				<li>Basic cleaning</li>
+				<li>Deep cleaning</li>
+				<li>Laundry and ironing</li>
+				<li>Organization</li>
+				<li>Pet care</li>
+				<li>Special requests</li>
+			</ul>
+			<button onclick="showForm()">Request a Service</button>
+			<div id="service-form" style="display:none;">
+				<form action="submit-form.php" method="post">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required><br><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required><br><br>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required><br><br>
+					<label for="service">Service:</label>
+					<select id="service" name="service" required>
+						<option value="basic">Basic Cleaning</option>
+						<option value="deep">Deep Cleaning</option>
+						<option value="laundry">Laundry and Ironing</option>
+						<option value="organization">Organization</option>
+						<option value="pet">Pet Care</option>
+						<option value="special">Special Requests</option>
+					</select><br><br>
+					<label for="date">Date:</label>
+					<input type="date" id="date" name="date" required><br><br>
+					<label for="time">Time:</label>
+					<input type="time" id="time" name="time" required><br><br>
+					<label for="message">Message:</label><br>
+					<textarea id="message" name="message" rows="5"></textarea><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Our housemaid services are designed to help you keep your home clean and organized, so you can focus on the things that matter most to you. Our team of experienced and reliable housemaids is dedicated to providing the highest quality of service to our clients.</p>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name
