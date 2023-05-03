@@ -1,6 +1,7 @@
 /*navbar brand name*/
 .navbar-brand{
-    font-size: 30px;  
+    font-size: 30px;
+    font-weight: bold;  
 }
 
 /*navbar text color*/
@@ -53,4 +54,31 @@
 #newline::before{
     content: "\a";
     white-space: pre;
+}
+
+/*Cards*/
+.card{
+    position: absolute;
+  top: 400px;
+  left: 550px;
+}
+.card1{
+    position: absolute;
+  top: 175px;
+  left: 550px;
+}
+.card2{
+    position: absolute;
+  top: 175px;
+  left: 1050px;
+}
+.card3{
+    position: absolute;
+  top: 400px;
+  left: 1050px;
+}
+/*Allrounder image*/
+.img-fluid{
+    height: 175px;
+    width: 80%;
 }
